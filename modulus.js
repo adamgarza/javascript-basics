@@ -1,18 +1,21 @@
 // MISC.
-function chocolateCake(num) {
-  while (num > 0 && num <= 100) {
-    if (num % 3 === 0 && num % 5 === 0) {
-      return "ChocolateCake";
-    } else if (num % 5 === 0) {
-      return "Cake";
-    } else if (num % 3 === 0) {
-      return "Chocolate";
+function rightPoint() {
+  var i;
+  for (i = 0; i <= 100; i++){
+    if (i%3===0 && i%5===0) {
+      console.log("rightpoint");
+    } else if (i%5===0) {
+      console.log("point");
+    } else if (i%3===0) {
+      console.log("right");
     } else {
-      return num;
+      console.log(i);
     }
   }
 }
-console.log(chocolateCake(1));
-console.log(chocolateCake(3));
-console.log(chocolateCake(5));
-console.log(chocolateCake(15));
+
+rightPoint();
+// console.log(rightPoint(3));
+// console.log(rightPoint(5));
+// console.log(rightPoint(15));
+console.log("\n\n\n");
